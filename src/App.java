@@ -9,7 +9,8 @@ public class App extends Application{
         cs331TicTacToeFrame frame = new cs331TicTacToeFrame(stage);
      
         // Add the game here to the frame
-        
+        myTicTacToe game = new myTicTacToe();
+        frame.addGame(game);
         
     }
     public static void main(String[] args) throws Exception {

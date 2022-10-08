@@ -16,7 +16,7 @@
             "request": "launch",
             "mainClass": "App",
             "projectName": "TicTacToe_d05bbfe9",
-            "vmArgs": "--module-path C:/Users/Ethan/Onedrive/Documents/School/CSCI-3331/Homework/Javafx/javafx-sdk-18.0.2/lib --enable-preview"
+            "vmArgs": "--module-path C:/Users/Ethan/Onedrive/Documents/School/CSCI-3331/Homework/Javafx/javafx-sdk-18.0.2/lib --add-modules=javafx.controls --enable-preview"
         }
     ]
 }
