@@ -7,6 +7,11 @@ public class Player implements cs331TicTacToePlayer {
     private String icon;
     private cs331TicTacToeBoard board;
     private cs331TicTacToeController controller;
+
+    public Player() // empty constructor for testing
+    {
+        
+    }
     
     public Player(String s, cs331TicTacToeBoard b, cs331TicTacToeController c){
         icon = s;
@@ -21,7 +26,9 @@ public class Player implements cs331TicTacToePlayer {
     public void selectSquare(int arg0, int arg1){
         board.squareAt(arg0, arg1).markSquare(icon);
         controller.finishedTurn();
-        controller.setControllerMessage("Player " + icon + " has finished their turn.");
+        if (controller.getWinningPlayer() == null){  // do this so "Player wins" text overrides the finished turn text
+            controller.setControllerMessage("Player " + icon + " has finished their turn.");
+        }
     }
 
 }
